@@ -1,0 +1,176 @@
+html {
+    background-color: #786583;
+    font-family: 'Raleway', sans-serif;
+    color: #FFF9E8;
+}
+
+body {
+    height: auto;
+}
+
+header {
+    height: 9.5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF9E8;
+    border-bottom: 2px solid rgba(72, 50, 84, 0.7);
+}
+
+.logocontainer {
+    height: 100%;
+    width: auto;
+    margin: auto 4%;
+    display: flex;
+}
+
+.logo {
+    height: 80%;
+    width: auto;
+    margin: auto;
+}
+
+.navmenu {
+    display: flex;
+    height: 100%;
+    width: auto;
+    margin: auto 4%;
+}
+
+.menu {
+    margin: auto;
+}
+
+.hero {
+    display: block;
+}
+
+.ctacontainer {
+    margin-top: -10vh;
+}
+
+.ctacontainer, .contact {
+    display: flex;
+    width: 100%;
+    color: #FFF9E8;
+}
+
+.ctacontainer a, .contact a {
+    margin: auto;
+}
+
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:active {
+    color: inherit;
+}
+
+.cta {
+    width: 9rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    background-color: rgba(85, 106, 119, .88);
+    text-align: center;
+    padding: 1.1rem 0.5rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+.quotecontainer {
+    display: flex;
+    width: 100%;
+    margin: 5vh 0 0;
+}
+
+.quote {
+    width: 40vw;
+    height: 100%;
+    margin: auto;
+    color: #FFF9E8;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+p i {
+    font-style: italic;
+}
+
+.quotecontainer p {
+    font-size: 0.7rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.55);
+    line-height: 0.9rem;
+}
+
+hr {
+    border-top: 1px solid #A293A9;
+    border-bottom: none;
+    width: 75%;
+}
+
+.linkscontainer {
+    display: flex;
+    width: 100%;
+    height: 22vh;
+    margin: 2rem 0;
+}
+
+.links {
+    width: 28vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.links img {
+    height: 141px;
+}
+
+.links h2 {
+    font-size: .875rem;
+    padding-top: 0.5rem;;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact h1 {
+    margin: 1.5rem;
+}
+
+.contact .cta {
+    margin: 0 auto 1.5rem;
+}
+
+footer {
+    background-color: #ACB4B3;
+    position: relative;
+    bottom: 0;
+    height: 6vh;
+    width: 100%;
+    display: flex;
+}
+
+.copyright {
+    margin: auto;
+    text-align: center;
+    color: #483254;
+}
+
+.copyright p {
+    font-size: .65rem;
+}
+
+.address {
+    text-decoration: underline;
+}
