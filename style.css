@@ -412,6 +412,7 @@ h3 {
 
 .recaptcha {
     padding: 1rem;
+    margin: auto;
 }
 
 .submit:hover {
