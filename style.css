@@ -76,6 +76,7 @@ nav {
     background-image: url(./images/new\ hero.svg);
     background-size: cover;
     background-position: 41% 50%;
+    animation: fadein 2s ease-in;
 }
 
 h1, h2 {
@@ -90,6 +91,7 @@ h1, h2 {
     display: flex;
     width: 100%;
     color: #FFF9E8;
+    animation: fadein 2s ease-in;
 }
 
 .ctacontainer a, .contact a {
@@ -462,6 +464,11 @@ h3 {
     display: none;
     position: fixed;
     animation: delay 1s forwards;
+}
+
+@keyframes fadein {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
 }
 
 @keyframes slide {
