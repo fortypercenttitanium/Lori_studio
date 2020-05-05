@@ -30,6 +30,7 @@ header {
     height: 85%;
     width: auto;
     margin: auto calc(1rem + 2vw);
+    cursor: pointer;
 }
 
 nav {
@@ -44,8 +45,17 @@ nav {
     padding: 2rem;
 }
 
+.nav span {
+    padding: 3rem 1rem;
+    font-size: 1.2rem;
+}
+
+.active {
+    text-decoration: underline;
+}
+
 .boundary {
-    background-color: #556A77;
+    border-left: solid 1px #556A77;
     width: 1px;
     height: 50%;
     margin: auto;
@@ -126,7 +136,7 @@ a:active {
 
 .alt {
     background-color: #ACB4B3;
-    margin: 2rem auto 1rem;
+    margin: auto;
 }
 
 .purple {
@@ -177,7 +187,7 @@ hr {
 .links {
     height: auto;
     width: 22vw;
-    margin: 2rem auto 1rem;
+    margin: 1rem auto 0;
     text-align: center;
 }
 
@@ -221,8 +231,8 @@ hr {
 }
 
 .links h2 {
-    font-size: calc(.48rem + 2vw);
-    padding-top: 2rem;
+    font-size: calc(.48rem + 1.3vw);
+    padding-top: 0.5rem;
     line-height: calc(.7rem + 2vw);
 }
 
@@ -233,12 +243,12 @@ hr {
 }
 
 .contact h1 {
-    margin: 6rem auto 4rem;
+    margin: 2rem auto 2rem;
     font-size: 1.5rem;
 }
 
 .contact .cta {
-    margin: 0 auto 6rem;
+    margin: 0 auto 2rem;
 }
 
 footer {
@@ -251,7 +261,7 @@ footer {
 }
 
 .copyright {
-    margin: 1rem auto;
+    margin: calc(0.2rem + 0.5vw) auto;
     text-align: center;
     color: #483254;
     line-height: 1rem;
@@ -260,8 +270,8 @@ footer {
 
 .copyright p {
     font-weight: 300;
-    font-size: calc(0.3rem + 1vw);
-    line-height: calc(0.6rem + 1vw);;
+    font-size: calc(0.3rem + 0.5vw);
+    line-height: calc(0.5rem + 0.5vw);
 }
 
 .address {
@@ -276,37 +286,54 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 90%;
+    width: 80%;
     max-width: 50rem;
     margin: auto;
 }
 
 .subpage-title {
+    grid-area: title;
     margin: 3.5rem 1rem 2rem;
     font-size: 2.25rem;
     font-weight: 300;
     line-height: 2.7rem;
 }
 
+.pricing-grid .subpage-title {
+    margin: 3% auto;
+}
+
+.subpage-title p {
+    font-size: calc(0.3rem + 0.7vw);
+    font-style: italic;
+    line-height: calc(0.7rem + 0.7vw);
+}
+
 .subpage-paragraph {
+    grid-area: para;
     text-indent: 1.5rem;
     margin: 0.5rem;
     text-align: left;
-    font-size: calc(0.5rem + 1vw);
+    font-size: 0.8rem;
     font-weight: 300;
-    line-height: calc(0.5rem + 2vw);
+    line-height: 1.5rem;
+}
+
+.subpage-paragraph p {
+    margin: 1rem auto;
 }
 
 .subpage-img {
     height: auto;
     width: calc(10rem + 34vw);
-    margin: 1rem auto 2.5rem;
+    margin: auto;
 }
 
 .studio-img {
+    grid-area: img;
     height: auto;
-    width: calc(12rem + 34vw);
-    margin: 1rem auto 2.5rem;
+    width: 100%;
+    margin: auto;
 }
 
 .subpage-paragraph a {
@@ -314,7 +341,8 @@ footer {
 }
 
 .subpage-anchor {
-    margin: auto auto calc(2rem + 2vw);
+    margin: 1rem auto calc(1rem + 2vw);
+    grid-area: cta;
 }
 
 .pricingh1 {
@@ -323,25 +351,70 @@ footer {
     line-height: calc(1.8rem + 2vw);
 }
 
-.pricecontainer {
+.voice {
+    grid-area: voice;
+}
+
+.piano {
+    grid-area: piano;
+}
+
+.combined {
+    grid-area: combined;
+}
+
+.discounts {
+    grid-area: discounts;
+    font-size: calc(0.5rem + 0.5vw);
+    font-style: italic;
+    margin-bottom: 2%;
+}
+
+.pricing-grid {
+    margin: auto;
     display: grid;
-    row-gap: calc(1rem + 2vw);
-    width: 100%;
-    grid-template: repeat(2, 1fr) / 1fr 1px 1fr;
-    margin: 2rem auto 0;
+    width: 90%;
+    max-width: 60rem;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    grid: repeat(7, auto) / repeat(2, 1fr);
+    grid-template-areas: 
+        'title title'
+        'voice piano'
+        'combined combined'
+        'discounts discounts'
+        'img img'
+        'para para'
+        'cta cta';
+}
+
+.pricecell {
+    padding: 2%;
+    text-align: center;
 }
 
 .pricecell h1 {
     font-size: calc(1.3rem + 1vw);
     line-height: calc(2rem + 1vw);
     text-decoration: underline;
-    margin-bottom: calc(0.4rem + 1vw);
+    margin: calc(0.4rem + 1vw);
 }
 
 .pricecell h2 {
     padding: 0.5rem;
     font-size: calc(0.5rem + 1vw);
     line-height: calc(1.5rem + 1vw);
+}
+
+.pricecell p {
+    font-size: calc(0.7rem + 0.3vw);
+    margin: 0.5rem auto 0;
+    line-height: calc(0.7rem + 1.5vw);
+}
+
+.pricing-grid .subpage-anchor {
+    margin: auto auto 2rem;
 }
 
 .divider {
@@ -354,10 +427,11 @@ footer {
     grid-column: 1 / span 3;
 }
 
-aside {
-    font-style: italic;
-    margin: -1rem 0 1.5rem;
-    font-size: calc(0.45rem + 0.8vw);
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
 }
 
 .contact-form h1 {
@@ -397,6 +471,10 @@ h3 {
     margin: 0 auto;
 }
 
+.field option {
+    font-size: 1.2rem;
+}
+
 .forminput {
     margin: 1rem auto;
     width: 100%;
@@ -409,6 +487,7 @@ h3 {
 
 .submit {
     width: 25%;
+    max-width: 10rem;
 }
 
 .recaptcha-container {
@@ -448,7 +527,7 @@ h3 {
     border-bottom: 1px solid #483254; 
     background-color: inherit;
     width: 100%;
-    height: 50%;
+    height: auto;
     z-index: 2;
     animation: slide 0.3s forwards;
 }
@@ -488,13 +567,17 @@ h3 {
     100% { opacity: 100%; }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
     nav {
         display: flex;
     }
 
     .nav {
         padding: 1rem;
+    }
+
+    .links {
+        margin: 2rem auto 1rem;
     }
     
     .links:first-child {
@@ -503,6 +586,10 @@ h3 {
     
     .links:last-child {
         margin-right: calc(5rem + 5vw);
+    }
+
+    .links h2 {
+        padding-top: 2rem;
     }
 
     .cta {
@@ -528,15 +615,48 @@ h3 {
 
     .contact h1 {
         font-size: 2rem;
+        margin: 4rem auto 3rem;
     }
+    
+    .contact .cta {
+        margin: 0 auto 4rem;
+    }
+
     .navmenu {
         display: none;
     }
     .subpage-main {
-        width: 80%;
+        width: 70%;
+        margin: 0 5%;
+        min-width: fit-content;
+        display: grid;
+        grid-template-areas:
+            'title title'
+            'img para'
+            'cta cta';
+        gap: 1rem 3rem;
     }
+
+    .altgrid {
+        grid-template-areas:
+            'title title'
+            'para img'
+            'cta cta';
+    }
+
+    .subpage-img {
+        width: calc(10rem + 34vw);
+        margin: auto;
+    }
+
     .subpage-paragraph {
-        margin: 1rem;
+        margin: auto;
+        font-size: calc(0.2rem + 0.8vw);
+        line-height: calc(1.8vw);
+    }
+
+    .subpage-anchor {
+        margin: 4rem auto;
     }
 
     .pricingh1 {

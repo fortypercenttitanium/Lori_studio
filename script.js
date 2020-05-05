@@ -1,4 +1,5 @@
 const header = document.querySelector('header');
+const logo = document.querySelector('.logo')
 const hamburger = document.querySelector('.menu');
 const nav = document.querySelector('nav');
 const navClone = nav.cloneNode(true);
@@ -9,6 +10,9 @@ blurAndDim.className = 'blurdim';
 document.querySelector('body').insertBefore(blurAndDim, header);
 mobileNavMenu.className = 'mobile-nav-menu';
 
+logo.addEventListener('click', () => {
+    window.location = './index.html';
+})
 
 const mobileNavDeactive = () => {
     mobileNavMenu.style.display = 'none';
