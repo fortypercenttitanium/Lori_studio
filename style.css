@@ -503,6 +503,10 @@ h3 {
     width: 100%;
 }
 
+.g-recaptcha {
+    width: 80%;
+}
+
 .submit:hover {
     cursor: pointer;
 }
