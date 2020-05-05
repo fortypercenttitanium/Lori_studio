@@ -501,6 +501,7 @@ h3 {
 .recaptcha {
     margin: auto;
     text-align: center;
+    width: 100%;
 }
 
 .submit:hover {
