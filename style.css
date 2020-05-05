@@ -83,7 +83,7 @@ nav {
     height: 80vh;
     width: 100%;
     text-align: center;
-    background-image: url(./images/new\ hero.svg);
+    background-image: url(./images/new\ hero.png);
     background-size: cover;
     background-position: 41% 50%;
     animation: fadein 2s ease-in;
