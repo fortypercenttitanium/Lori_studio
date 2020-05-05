@@ -494,13 +494,12 @@ h3 {
 
 .recaptcha-container {
     display: flex;
-    width: 80%;
+    width: 300px;
     margin: auto;
 }
 
 .recaptcha {
     margin: auto;
-    text-align: center;
     width: 100%;
 }
 
