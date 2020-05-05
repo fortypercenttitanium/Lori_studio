@@ -468,7 +468,7 @@ h3 {
 .field {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 90%;
     max-width: 25rem;
     margin: 0 auto;
 }
