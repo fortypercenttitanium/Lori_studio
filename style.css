@@ -430,8 +430,10 @@ footer {
 .contact-form {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 80%;
+    min-width: 310px;
     margin: auto;
+    text-align: center;
 }
 
 .contact-form h1 {
@@ -492,6 +494,7 @@ h3 {
 
 .recaptcha-container {
     display: flex;
+    width: 100%;
 }
 
 .recaptcha {
