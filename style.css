@@ -46,7 +46,7 @@ nav {
 
 .boundary {
     background-color: #556A77;
-    width: 0.5px;
+    width: 1px;
     height: 50%;
     margin: auto;
 }
@@ -320,6 +320,7 @@ footer {
 .pricingh1 {
     font-size: calc(1.2rem + 2vw);
     margin: 2rem auto 1rem;
+    line-height: calc(1.8rem + 2vw);
 }
 
 .pricecontainer {
@@ -410,10 +411,15 @@ h3 {
     width: 25%;
 }
 
+.recaptcha-container {
+    display: flex;
+}
+
 .recaptcha {
-    padding: 1rem;
     margin: auto;
     text-align: center;
+    width: auto;
+    height: auto;
 }
 
 .submit:hover {
