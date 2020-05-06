@@ -7,7 +7,7 @@ const topicInput = document.querySelector('#topic');
 const textField = document.querySelector('textarea');
 
 const validateName = () => {
-    if (/^[a-zA-Z]+ [a-zA-Z]+/g.test(nameInput.value)) {
+    if (/^[a-zA-Z]+[\-']?[a-zA-Z]* [a-zA-Z]+[\-']?[a-zA-Z]*/g.test(nameInput.value)) {
         return true;
     } else {
         invalidModal.textContent += 'Please enter a valid name (first and last).'

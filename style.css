@@ -402,7 +402,6 @@ footer {
 }
 
 .pricecell h2 {
-    padding: 0.5rem;
     font-size: calc(0.5rem + 1vw);
     line-height: calc(1.5rem + 1vw);
 }
@@ -633,9 +632,9 @@ h3 {
         display: none;
     }
     .subpage-main {
-        width: 70%;
-        margin: 0 5%;
-        min-width: fit-content;
+        width: 85%;
+        margin: 0 auto;
+        max-width: none;
         display: grid;
         grid-template-areas:
             'title title'
