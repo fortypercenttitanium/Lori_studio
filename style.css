@@ -80,7 +80,7 @@ nav {
 
 .hero {
     display: block;
-    height: 80vh;
+    height: 60vh;
     width: 100%;
     text-align: center;
     background-image: url(./images/new\ hero.png);
@@ -367,7 +367,6 @@ footer {
     grid-area: discounts;
     font-size: calc(0.5rem + 0.5vw);
     font-style: italic;
-    margin-bottom: 2%;
 }
 
 .pricing-grid {
@@ -384,8 +383,8 @@ footer {
         'voice piano'
         'combined combined'
         'discounts discounts'
-        'img img'
         'para para'
+        'img img'
         'cta cta';
 }
 
@@ -407,13 +406,29 @@ footer {
 }
 
 .pricecell p {
-    font-size: calc(0.7rem + 0.3vw);
-    margin: 0.5rem auto 0;
+    font-size: calc(0.8rem + 0.3vw);
     line-height: calc(0.7rem + 1.5vw);
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.noindent {
+    text-indent: 0;
+}
+
+ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.subpage-main li {
+    margin: calc(0.3rem + 2.5vw) 0;    
+}
+
 .pricing-grid .subpage-anchor {
-    margin: auto auto 2rem;
+    margin: 2rem auto;
 }
 
 .divider {
@@ -582,6 +597,12 @@ h3 {
         padding: 1rem;
     }
 
+    .hero {
+        height: 70vh;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
     .links {
         margin: 2rem auto 1rem;
     }
@@ -662,7 +683,7 @@ h3 {
     }
 
     .subpage-anchor {
-        margin: 4rem auto;
+        margin: 3.5rem auto;
     }
 
     .pricingh1 {
