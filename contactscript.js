@@ -46,8 +46,19 @@ const validateText = () => {
     }
 }
 
+const validateHuman = () => {
+    const response = grecaptcha.getResponse(opt_widget_id);
+    if (JSON.parse(response).success) {
+        return true;
+    } else {
+        invalidModal.textContent += 'Please prove you are not a robot.'
+        invalidModal.style.display = 'flex';
+        return false;
+    }
+}
+
 const formValidation = () => {
-    return (validateName() && validateEmail() && validateTopic() && validateText())
+    return (validateName() && validateEmail() && validateTopic() && validateText() && validateHuman())
 }
 
 submitButton.addEventListener('click', () => {
