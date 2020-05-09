@@ -47,7 +47,7 @@ const validateText = () => {
 }
 
 const validateHuman = () => {
-    const response = grecaptcha.getResponse(opt_widget_id);
+    const response = grecaptcha.getResponse();
     console.log(response);
     if (JSON.parse(response).success) {
         return true;
