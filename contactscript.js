@@ -48,8 +48,7 @@ const validateText = () => {
 
 const validateHuman = () => {
     const response = grecaptcha.getResponse();
-    console.log(response);
-    if (JSON.parse(response).success) {
+    if (response.length > 0) {
         return true;
     } else {
         invalidModal.textContent += 'Please prove you are not a robot.'
