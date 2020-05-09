@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165914460-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-165914460-1');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="reset.css">
@@ -74,7 +83,7 @@
 
         <h3>Fill out this form and I'll get back to you ASAP!</h3>
 
-        <form id='contact-form' action="POST" data-netlify="true" enctype="application/x-www-form-urlencoded">
+        <form id='contact-form' action="POST" data-netlify-recaptcha="true" enctype="application/x-www-form-urlencoded">
             <div class="field">
                 <div class="invalid"></div>
                 <input class="smalltext forminput" type="text" name="name" id="name" placeholder="Name" required />
@@ -88,7 +97,7 @@
             </div>
 
             <div class="recaptcha-container">
-                <div class="recaptcha" data-netlify-recaptcha="true"></div>
+                <div class="g-recaptcha" data-sitekey="6LeTxPQUAAAAAHNF3fDXpTY4NQLk80-B4Y87zDvc"></div>
             </div>
 
             <div class="cta purple submit">Submit</div>
@@ -109,5 +118,6 @@
     </footer>
     <script src="script.js"></script>
     <script src="./contactscript.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
