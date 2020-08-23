@@ -431,6 +431,10 @@ ul {
     margin: 2rem auto;
 }
 
+.pricing-grid p {
+    line-height: 2rem;
+}
+
 .divider {
     height: 70%;
     align-self: flex-end;
