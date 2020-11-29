@@ -614,7 +614,8 @@ h3 {
 	}
 
 	.hero {
-		height: 40rem;
+		min-height: 40rem;
+		max-height: calc(100vh - calc(4rem + 3vw));
 		background-size: cover;
 		background-position: 50% 50%;
 	}
