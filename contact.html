@@ -83,6 +83,8 @@
 
         <h3>Fill out this form and I'll get back to you ASAP!</h3>
 
+        <h3 class="warn">I am currently not accepting new students at this time.</h3>
+
         <form id='contact-form' action="POST" data-netlify="true" data-netlify-recaptcha="true" enctype="application/x-www-form-urlencoded">
             <div class="field">
                 <div class="invalid"></div>
@@ -90,7 +92,7 @@
                 <input class="smalltext forminput" type="email" name="email" id="email" placeholder="Email" required />
                 <select class="forminput" name="topic" id="topic" required >
                     <option value="null">Select an option:</option>
-                    <option value="booking">Booking</option>
+                    <option disabled value="booking">Booking - n/a</option>
                     <option value="question">Other questions</option>
                 </select>
                 <textarea class="forminput" name="message" id="message" cols="auto" rows="10" placeholder="Type your message here" required></textarea>
@@ -110,7 +112,7 @@
         <div class="copyright">
             <p>Copyright 2020 Lori Younger Music Studio</p>
             <p class="address">
-                <a href="https://goo.gl/maps/XAtNDBwLZQ7bpqAf9" target="_blank" rel="noreferrer">
+                <a rel="noopener" href="https://goo.gl/maps/XAtNDBwLZQ7bpqAf9" target="_blank" rel="noreferrer">
                 1207 Walnut Ave.<br>Haddon Township, NJ 08107
                 </a>
             </p>
